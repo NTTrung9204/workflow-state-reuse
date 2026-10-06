@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Plot the trend of C-Yield over time for the TS1 dataset."
+    },
+    {
+        "question": "Visualize the relationship between reactor temperature and C-Yield in the DOE dataset."
+    },
+    {
+        "question": "Plot C-SEC versus C-Yield in TS4 dataset over time."
+    },
+    {
+        "question": "Create a heatmap showing the correlation matrix between all operating conditions and performance metrics."
+    },
+    {
+        "question": "Plot the reactor temperature profile over time from February 2024 to April 2024."
+    },
+    {
+        "question": "Visualize the changes in Heater and Cooler energy consumption in the distillation column over time."
+    },
+    {
+        "question": "Plot the distribution of C-Yield for DOE, BO, and TS1 experiments."
+    },
+    {
+        "question": "Create a scatter plot of CO inlet flow rate versus C-Yield colored by reactor temperature in DOE dataset."
+    },
+    {
+        "question": "Plot the temperatures of all distillation column stages on the same figure in TS4 dataset."
+    },
+    {
+        "question": "Visualize compressor pressure versus C-SEC for all DOE experiments."
+    },
+    {
+        "question": "Create a contour map of C-Yield over reactor temperature and CO inlet flow rate in DOE dataset."
+    },
+    {
+        "question": "Plot the moving average of C-Yield over time in TS1 experiments."
+    },
+    {
+        "question": "Visualize the energy consumption of compressors K-101, K-102, K-103, and K-104 in TS2 experiments."
+    },
+    {
+        "question": "Create a boxplot comparing C-Yield across DOE, BO, TS1, and TS4 datasets."
+    },
+    {
+        "question": "Plot all operating conditions and performance metrics of the TS4 dataset over time in separate subplots."
+    },
+    {
+        "question": "Visualize how compressor pressure and reactor temperature jointly affect C-Yield in the DOE dataset using a contour plot."
+    },
+    {
+        "question": "Create a pairplot of the main operating variables and performance metrics in the DOE dataset."
+    },
+    {
+        "question": "Run BO with 2000 points and plot the convergence of C-Yield."
+    },
+    {
+        "question": "Run BO with 2000 points. Create a scatter plot where the y-axis represents C-SEC on a logarithmic scale with values less than 3, the x-axis represents C-Yield on a logarithmic scale, add the Pareto front to illustrate the trade-off between the objectives, and use color to indicate the iteration progression of the optimization process."
+    },
+    {
+        "question": "Run BO with 2000 points and create five scatter plots. In each plot, the x-axis represents C-Yield, the y-axis represents energy consumption on a logarithmic scale, and each operating parameter is represented by color. I would like to examine how the operating conditions influence both C-Yield and energy consumption."
+    }
+]

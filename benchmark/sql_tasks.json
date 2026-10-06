@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Find all records where the temperature is greater than 450 K."
+    },
+    {
+        "question": "Count the number of records for each experiment."
+    },
+    {
+        "question": "Which TEST_ID has the highest C-Yield?"
+    },
+    {
+        "question": "Which RUN_ID has the highest C-SEC?"
+    },
+    {
+        "question": "Show the average temperature for each TEST_ID."
+    },
+    {
+        "question": "How many records have carbon yield lower than 20% in the BO dataset?"
+    },
+    {
+        "question": "Compare the average C-Yield between DOE and BO experiments."
+    },
+    {
+        "question": "Show the changes in Heater and Cooler values in the distillation column for the TS1 dataset."
+    },
+    {
+        "question": "Show the temperatures of all stages in the distillation column."
+    },
+    {
+        "question": "Show the MeAce product outlet flow rate when the temperature is between 460 K and 480 K."
+    },
+    {
+        "question": "Show the reactor temperature from February 1, 2026 to April 20, 2026."
+    },
+    {
+        "question": "Show C-SEC from February 20, 2024 to April 10, 2024."
+    },
+    {
+        "question": "Show the average C-Yield and average C-SEC in 2026."
+    },
+    {
+        "question": "List the operating conditions that achieve carbon yield greater than 80%."
+    },
+    {
+        "question": "Show the range of operating conditions in DOE experiments."
+    },
+    {
+        "question": "For each RUN_ID, show the earliest and latest experiment timestamps."
+    },
+    {
+        "question": "Show the change of C-Yield over time in the TS1 dataset."
+    },
+    {
+        "question": "List the operating conditions and MeAce product output when the CO inlet flow rate is between 40 mol/s and 60 mol/s, the reactor temperature is between 460 K and 480 K, and the compressor pressure is between 2,500,000 Pa and 3,100,000 Pa."
+    },
+    {
+        "question": "Show the highest carbon yield across different experiments."
+    },
+    {
+        "question": "List the Pareto front points in the DOE dataset when minimizing C-Yield and maximizing C-SEC."
+    }
+]

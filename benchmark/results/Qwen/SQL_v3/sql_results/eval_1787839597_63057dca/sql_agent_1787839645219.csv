@@ -1,0 +1,2 @@
+error
+"Cannot fulfill request: SQL SELECT queries retrieve data rows, not table schema or column definitions. Use database-specific metadata commands (e.g., PRAGMA table_info or INFORMATION_SCHEMA) outside of this query generator."

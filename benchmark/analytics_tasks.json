@@ -1,0 +1,41 @@
+[
+    {
+        "question": "Calculate the correlation matrix between all operating conditions and performance metrics such as C-Yield and C-SEC."
+    },
+    {
+        "question": "Find the 3 operating variables most strongly correlated with C-Yield."
+    },
+    {
+        "question": "List the Pareto front points in the DOE dataset when maximizing C-Yield and minimizing C-SEC."
+    },
+    {
+        "question": "Calculate the operating condition ranges corresponding to the top 5% highest C-Yield values."
+    },
+    {
+        "question": "Analyze how compressor pressure simultaneously affects both C-Yield and C-SEC."
+    },
+    {
+        "question": "Analyze the influence of CO inlet flow rate on C-Yield in the DOE dataset when CO flow rate is greater than 50 mol/s, reactor temperature is between 450 K and 486 K, and reactor length is between 5 m and 8.5 m."
+    },
+    {
+        "question": "Run BO 2000 points and analyze the convergence behavior of C-Yield."
+    },
+    {
+        "question": "Analyze the combined influence of splitter settings, temperature, and compressor pressure on C-SEC."
+    },
+    {
+        "question": "Under reactor temperatures between 440 K and 475 K, compressor pressures between 2.6 MPa and 3.2 MPa, and CO inlet flow rates between 40 mol/s and 60 mol/s, provide statistics (mean, std, min, max, count, median, skewness, kurtosis, sum, variance) for energy consumption in Heater E-101."
+    },
+    {
+        "question": "During the operating period from February to April 2024, provide statistics (mean, std, min, max, count, median, skewness, kurtosis, sum, variance) for the energy consumption of the cooler and reboiler in the distillation column."
+    },
+    {
+        "question": "Compare and analyze the energy consumption levels of compressors K-101, K-102, K-103, and K-104 in the TS2 dataset."
+    },
+    {
+        "question": "How should the operating conditions be adjusted to reduce cost specific energy consumption?"
+    },
+    {
+        "question": "When reactor temperature exceeds 480 K, which operating variable has the strongest impact on carbon yield?"
+    }
+]

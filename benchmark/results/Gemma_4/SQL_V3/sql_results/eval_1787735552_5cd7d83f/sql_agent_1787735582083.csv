@@ -1,0 +1,2 @@
+min_R101_Length,max_R101_Length,min_CO_molarFlow,max_CO_molarFlow,min_R101_Temperature,max_R101_Temperature,min_K101_Pressure,max_K101_Pressure,min_Splitter_17_Split_factors_1,max_Splitter_17_Split_factors_1
+4.2,8.8,20.0,70.0,433.0,486.0,2100000.0,3600000.0,0.05,0.35

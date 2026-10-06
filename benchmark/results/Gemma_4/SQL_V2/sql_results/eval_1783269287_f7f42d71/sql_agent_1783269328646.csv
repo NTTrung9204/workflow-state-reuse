@@ -1,0 +1,2 @@
+"MIN(""R-101_Length"")","MAX(""R-101_Length"")","MIN(""CO_molarFlow"")","MAX(""CO_molarFlow"")","MIN(""R-101_Temperature"")","MAX(""R-101_Temperature"")","MIN(""K-101_Pressure"")","MAX(""K-101_Pressure"")","MIN(""Splitter_17_Split factors_1"")","MAX(""Splitter_17_Split factors_1"")"
+4.2,8.8,20.0,70.0,433.0,486.0,2100000.0,3600000.0,0.05,0.35

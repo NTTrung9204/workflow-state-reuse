@@ -1,0 +1,56 @@
+[
+  {
+    "scenario_id": "multi_1",
+    "type": "multi_turn",
+    "prompts": [
+      "Please help me optimize two objectives: energy consumption cost (C-SEC) and carbon conversion efficiency (C-yield) using 1000 iterations within the following operating conditions: \n- Reactor Length: 4.2 – 8.8 m\n- Reactor Temperature: 433.0 – 486.0 K\n- CO flow rate: 30 – 70 mole/s\n- Compressor Pressure: 2.1 – 3.6 × 10⁶ Pa \n- Split Factor: 0.05 – 0.35\nPlot a graph showing the relationship between the two objectives during the optimization process,\nwhere:\n-\tThe x-axis represents C-yield \n-\tThe y-axis represents C-SEC \n-\tColor indicates the iteration progression of the optimization process \n-\tAlso, provide an explanation of the results.",
+      "Please redraw the previously generated plot with the following modifications: \n- The y-axis represents C-SEC on a logarithmic scale, with values less than 3 \n- The x-axis represents C-yield on a logarithmic scale \n- Add the Pareto front to better illustrate the trade-off between the objectives \n- The color should still indicate the iteration progression of the optimization process",
+      "Please create five scatter plots. In each plot:\n- The x-axis represents C-yield\n- The y-axis represents energy consumption (on a logarithmic scale)\n- Each operating parameter is represented by color I would like to examine how the operating conditions influence both C-yield and energy consumption."
+    ]
+  },
+  {
+    "scenario_id": "multi_2",
+    "type": "multi_turn",
+    "prompts": [
+      "Analyze the data in the DOE database and identify the operating ranges for:\n- Temperature \n- Pressure \n- CO flow rate \n- Split ratio \n- Reactor length \nthat can achieve:\n- Carbon conversion yield (C-YIELD) > 30% \n- Cost of specific energy consumption (C-SEC) < 2 (Eur/kg)\nProvide the recommended operating window for each parameter and summarize the corresponding performance statistics.",
+      "Using the recommended operating bounds identified in the previous analysis, plot the relationship among Reactor Temperature, Carbon conversion yield, Reactor Length, and CO flow rate.\n\nCreate a scatter plot where:\n- x-axis: Reactor Temperature\n- y-axis: Carbon conversion yield\n- Reactor Length: represented as different marker symbols/categories\n- CO flow rate: represented by color gradient\n\nApply a relatively wide jitter of about 3 units to reduce point overlap.\n\nThe plot should clearly show how C-yield changes with temperature under different reactor lengths and CO flow rates within the recommended operating window.",
+      "Analyze the influence of the above operating parameters on process performance and explain why the identified operating ranges can achieve the target values of Carbon conversion yield and Cost of specific energy consumption.\nYour analysis should include:\n- The individual effect of temperature, pressure, CO flow rate, split ratio, and reactor length on C-Yield and C-SEC. \n- The underlying process and reaction mechanisms that explain the observed trends. \n- An explanation of why the recommended operating region provides the best overall performance."
+    ]
+  },
+  {
+    "scenario_id": "multi_3",
+    "type": "multi_turn",
+    "prompts": [
+      "Use DOE dataset to analyze the impact of the following five operating parameters on Carbon conversion yield (C-YIELD) and Cost of specific energy consumption (C-SEC):\n- Temperature\n- Pressure\n- CO flow rate\n- Split ratio\n- Reactor length\n\nDetermine the relative importance of each parameter and rank them according to their overall influence on both objectives.\n\nThen:\n1. Identify the least influential parameter.\n2. Select the value of the least influential parameter corresponding to the best-performing DOE sample.\n3. Use the four most influential parameters for multi-objective optimization of Carbon conversion yield and Cost of specific energy consumption, while fixing the least influential parameter at the selected value.\n4. Provide recommendations for the subsequent optimization study.",
+      "Run the optimization again for the two objectives using all five operating parameters within the previously defined search ranges. \nThe objectives are:\n- Maximize Carbon Conversion Yield \n- Minimize Cost of Specific Energy Consumption \nAfter completing the optimization, plot the iteration progression of the optimization process, showing how the solutions evolve over successive iterations toward the Pareto-optimal region.",
+      "Please redraw the previously generated plot with the following modifications: \n- The y-axis represents Cost of specific energy consumption (C-SEC) on a logarithmic scale, with values less than 0.2 (Eur/kg)\n- The x-axis represents of Carbon conversion yield (C-YIELD) on a logarithmic scale \n- Add the Pareto front to better illustrate the trade-off between the objectives \n- The color should still indicate the iteration progression of the optimization process \nAnalyze the Pareto front in terms of economic performance and identify the operating regions that provide the best balance between Carbon Conversion Yield and Cost of Specific Energy Consumption."
+    ]
+  },
+  {
+    "scenario_id": "multi_4",
+    "type": "multi_turn",
+    "prompts": [
+      "Analyze the methyl acetate product results in the MeAce stream from January 27 to May 15, 2026",
+      "Analyze the energy consumption of the heater and cooler in the distillation column C-101 from February 27 to May 15, 2026",
+      "The fluctuation in MeAce production between 15 February and 15 March is significant. Please analyze the main operational factors contributing to these variations in MeAce production",
+      "Based on process theory and reaction engineering principles, explain how these factors influence both MeAce production and the Cost of Specific Energy Consumption."
+    ]
+  },
+  {
+    "scenario_id": "multi_5",
+    "type": "multi_turn",
+    "prompts": [
+      "Analyze the results in the experimental database (DOE) to identify the three factors that most significantly influence C-yield. Then, further analyze the multidimensional interactions among these three factors with respect to C-yield",
+      "Plot visualizations showing the relationships between the three most influential parameters and Carbon conversion yield (C-YIELD):\n\n- A 2D Seaborn scatter plot with:\n  - x-axis: most influential parameter\n  - y-axis: C-YIELD\n  - marker: second most influential parameter\n  - color: third most influential parameter\n  - alpha transparency, jitter, and custom markers\n\n- A 3D contour surface plot with:\n  - x-axis: most influential parameter\n  - y-axis: second most influential parameter\n  - z-axis: C-YIELD\n  - third most influential parameter represented by contour levels or separate slices.",
+      "Finally, analyze the optimal conditions of these three parameters to achieve the maximum C-yield"
+    ]
+  },
+  {
+    "scenario_id": "multi_7",
+    "type": "multi_turn",
+    "prompts": [
+      "Use Bayesian optimization to analyze the convergence process when optimizing C-yield and C-sec (Eur/kg). I want to see a scatter plot with C-yield on the x-axis and C-sec on the y-axis.",
+      "Let's use a line chart with a sliding window average to smooth out fluctuations."
+    ]
+  }
+]

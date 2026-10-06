@@ -1,0 +1,498 @@
+{
+    "scenario_1": {
+        "query_2": {
+            "gemma": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 12,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 12,
+                    "reuse": 5
+                },
+                {
+                    "total_step": 10,
+                    "reuse": 5
+                },
+                {
+                    "total_step": 10,
+                    "reuse": 5
+                }
+            ]
+        },
+        "query_3": {
+            "gemma": [
+                {
+                    "total_step": 10,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 10,
+                    "reuse": 4
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 15,
+                    "reuse": 12
+                },
+                {
+                    "total_step": 15,
+                    "reuse": 12
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 15,
+                    "reuse": 12
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 10,
+                    "reuse": 1
+                }
+            ]
+        }
+    },
+    "scenario_2": {
+        "query_2": {
+            "gemma": [
+                {
+                    "total_step": 11,
+                    "reuse": 6
+                },
+                {
+                    "total_step": 10,
+                    "reuse": 3
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 6
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 9,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 2
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": "N/A",
+                    "reuse": 1
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ]
+        },
+        "query_3": {
+            "gemma": [
+                {
+                    "total_step": 3,
+                    "reuse": 1
+                },
+                {
+                    "total_step": 3,
+                    "reuse": 1
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 3
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 9,
+                    "reuse": 3
+                },
+                {
+                    "total_step": 11,
+                    "reuse": 9
+                },
+                {
+                    "total_step": 3,
+                    "reuse": 1
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 7,
+                    "reuse": 5
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 3
+                }
+            ]
+        }
+    },
+    "scenario_3": {
+        "query_2": {
+            "gemma": [
+                {
+                    "total_step": 11,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 7
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 17,
+                    "reuse": 8
+                },
+                {
+                    "total_step": 17,
+                    "reuse": 8
+                },
+                {
+                    "total_step": 13,
+                    "reuse": 7
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 7,
+                    "reuse": 1
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 1
+                },
+                {
+                    "total_step": 19,
+                    "reuse": 7
+                }
+            ]
+        },
+        "query_3": {
+            "gemma": [
+                {
+                    "total_step": 12,
+                    "reuse": 9
+                },
+                {
+                    "total_step": 14,
+                    "reuse": 9
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 9
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 17,
+                    "reuse": 14
+                },
+                {
+                    "total_step": 14,
+                    "reuse": 11
+                },
+                {
+                    "total_step": 20,
+                    "reuse": 10
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 12,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 22,
+                    "reuse": 19
+                }
+            ]
+        }
+    },
+    "scenario_4": {
+        "query_3": {
+            "gemma": [
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 7,
+                    "reuse": 1
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 7,
+                    "reuse": 1
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 2
+                }
+            ]
+        },
+        "query_4": {
+            "gemma": [
+                {
+                    "total_step": 9,
+                    "reuse": 6
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 7
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 9,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 3,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 3,
+                    "reuse": 1
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 15,
+                    "reuse": 2
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 7
+                }
+            ]
+        }
+    },
+    "scenario_5": {
+        "query_2": {
+            "gemma": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 12,
+                    "reuse": 9
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 13,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ]
+        },
+        "query_3": {
+            "gemma": [
+                {
+                    "total_step": 7,
+                    "reuse": 3
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 3
+                },
+                {
+                    "total_step": 13,
+                    "reuse": 7
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 11,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 18,
+                    "reuse": 12
+                },
+                {
+                    "total_step": 13,
+                    "reuse": 7
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 11,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 15,
+                    "reuse": 13
+                },
+                {
+                    "total_step": 11,
+                    "reuse": 7
+                }
+            ]
+        }
+    },
+    "scenario_6": {
+        "query_2": {
+            "gemma": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ],
+            "gemini": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 10,
+                    "reuse": 7
+                },
+                {
+                    "total_step": 9,
+                    "reuse": 6
+                }
+            ],
+            "qwen": [
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                },
+                {
+                    "total_step": 7,
+                    "reuse": 4
+                }
+            ]
+        }
+    }
+}

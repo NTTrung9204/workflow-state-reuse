@@ -1,0 +1,1091 @@
+{
+    "columns": {
+        "time": {
+            "type": "datetime64[ns]",
+            "format": "ISO 8601",
+            "description": "Timestamp of the data record in Coordinated Universal Time (UTC) with 30-minute intervals"
+        },
+        "R-101_Length": {
+            "type": "REAL",
+            "unit": "m",
+            "description": "Reactor R-101 length (input parameter). This is the length of reactor R-101, one of the five surveyed operating parameters (operating parameters). It will impact the MeAce output flow, the carbon yield (C-yield), and the total cost (C-SEC)"
+        },
+        "R-101_Temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Reactor R-101 temperature (input parameter). This is the temperature of reactor R-101, one of the five surveyed operating parameters (operating parameters). It will impact the MeAce output flow, the carbon yield (C-yield), and the total cost (C-SEC)"
+        },
+        "Splitter_17_Split factors_1": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Splitter recycle ratio - fraction of flow recycled back (input parameter). This is the splitter recycle ratio, one of the five surveyed operating parameters (operating parameters). It will impact the MeAce output flow, the carbon yield (C-yield), and the total cost (C-SEC)"
+        },
+        "K-101_Pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Reactor operating pressure set by compressor K-101 (input parameter). This is the operating pressure set by compressor K-101, one of the five surveyed operating parameters (operating parameters). It will impact the MeAce output flow, the carbon yield (C-yield), and the total cost (C-SEC)"
+        },
+        "CO_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Molar flow rate of carbon monoxide (CO) feed input (input parameter). This is the molar flow rate of supplied CO gas, the feed for stream CO, and one of the five surveyed operating parameters (operating parameters). It will impact the MeAce output flow, the carbon yield (C-yield), and the total cost (C-SEC)"
+        },
+        "E-101_Heat duty": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Heat duty of heat exchanger E-101. This is the thermal energy duty of E-101 (HeaterCooler). It increases the temperature of stream 42 to produce stream 2 at 372 K. This unit operates as a heater.",
+            "note": "Because E-101 is a heater, its heat duty is positive since it supplies thermal energy to the process."
+        },
+        "E-102_Heat duty": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Heat duty of heat exchanger E-102. This is the thermal energy duty of E-102 (HeaterCooler). It decreases the temperature of stream 5 to produce stream 6 at 300 K. This unit operates as a cooler.",
+            "note": "Because E-102 is a cooler, its heat duty is negative since it removes thermal energy from the process."
+        },
+        "V-101_Pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure in vessel V-101. This is the pressure in flash vessel V-101, where vapor-liquid flash separation occurs."
+        },
+        "C-101_Temperature profile_all": {
+            "type": "TEXT",
+            "unit": "K",
+            "description": "Temperature profile of 17 elements in distillation column C-101, represented as a text string of semicolon-separated temperature values."
+        },
+        "C-101_Pressure profile_all": {
+            "type": "TEXT",
+            "unit": "Pa",
+            "description": "Pressure profile of 17 elements in distillation column C-101, represented as a text string of semicolon-separated pressure values."
+        },
+        "C-101_Duties profile_all": {
+            "type": "TEXT",
+            "unit": "W",
+            "description": "Energy duties of 17 elements in distillation column C-101, represented as a text string of semicolon-separated duty values.",
+            "note": "The first element is negative duty (represents a cooler) and the 17th element is positive duty (represents a reboiler)."
+        },
+        "K-103_Pressure increase": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure increase across compressor K-103. The inlet stream is LP Recycle and the outlet stream is stream 11."
+        },
+        "K-103_Pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of compressor K-103",
+            "note": "This value is equal to the pressure of compressor K-101."
+        },
+        "K-103_Energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Energy consumption of compressor K-103"
+        },
+        "K-103_Pressure ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Pressure ratio of compressor K-103."
+        },
+        "K-103_Volume ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Volume ratio of compressor K-103"
+        },
+        "K-103_Ideal (isentropic) energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Ideal isentropic energy demand of compressor K-103"
+        },
+        "K-102_Pressure increase": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure increase across compressor K-102. The inlet stream is HP Recycle and the outlet stream is stream 14."
+        },
+        "K-102_Pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of compressor K-102, with HP Recycle as inlet stream and stream 14 as outlet stream.",
+            "note": "This value is equal to the pressure of compressor K-101."
+        },
+        "K-102_Energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Energy consumption of compressor K-102"
+        },
+        "K-102_Pressure ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Pressure ratio of compressor K-102"
+        },
+        "K-102_Volume ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Volume ratio of compressor K-102"
+        },
+        "K-102_Ideal (isentropic) energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Ideal isentropic energy demand of compressor K-102"
+        },
+        "K-101_Pressure increase": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure increase across compressor K-101. The inlet stream is CO and the outlet stream is stream 16."
+        },
+        "K-101_Energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Energy consumption of compressor K-101"
+        },
+        "K-101_Pressure ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Pressure ratio of compressor K-101"
+        },
+        "K-101_Volume ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Volume ratio of compressor K-101"
+        },
+        "K-101_Ideal (isentropic) energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Ideal isentropic energy demand of compressor K-101"
+        },
+        "K-104_Pressure increase": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure increase across compressor K-104. The inlet stream is DME and the outlet stream is stream 42."
+        },
+        "K-104_Pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of compressor K-104, with DME as inlet stream and stream 42 as outlet stream."
+        },
+        "K-104_Energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Energy consumption of compressor K-104"
+        },
+        "K-104_Pressure ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Pressure ratio of compressor K-104"
+        },
+        "K-104_Volume ratio": {
+            "type": "REAL",
+            "unit": "dimensionless",
+            "description": "Volume ratio of compressor K-104"
+        },
+        "K-104_Ideal (isentropic) energy demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Ideal isentropic energy demand of compressor K-104"
+        },
+        "2_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 2"
+        },
+        "2_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 2"
+        },
+        "2_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 2"
+        },
+        "2_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 2"
+        },
+        "2_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 2"
+        },
+        "2_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 2"
+        },
+        "2_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 2"
+        },
+        "2_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 2"
+        },
+        "2_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 2"
+        },
+        "4_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 4"
+        },
+        "4_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 4"
+        },
+        "4_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 4"
+        },
+        "4_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 4"
+        },
+        "4_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 4"
+        },
+        "4_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 4"
+        },
+        "4_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 4"
+        },
+        "4_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 4"
+        },
+        "4_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 4"
+        },
+        "5_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 5"
+        },
+        "5_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 5"
+        },
+        "5_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 5"
+        },
+        "5_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 5"
+        },
+        "5_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 5"
+        },
+        "5_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 5"
+        },
+        "5_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 5"
+        },
+        "5_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 5"
+        },
+        "5_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 5"
+        },
+        "6_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 6"
+        },
+        "6_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 6"
+        },
+        "6_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 6"
+        },
+        "6_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 6"
+        },
+        "6_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 6"
+        },
+        "6_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 6"
+        },
+        "6_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 6"
+        },
+        "6_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 6"
+        },
+        "6_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 6"
+        },
+        "7_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 7"
+        },
+        "7_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 7"
+        },
+        "7_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 7"
+        },
+        "7_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 7"
+        },
+        "7_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 7"
+        },
+        "7_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 7"
+        },
+        "7_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 7"
+        },
+        "7_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 7"
+        },
+        "7_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 7"
+        },
+        "8_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 8"
+        },
+        "8_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 8"
+        },
+        "8_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 8"
+        },
+        "8_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 8"
+        },
+        "8_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 8"
+        },
+        "8_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 8"
+        },
+        "8_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 8"
+        },
+        "8_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 8"
+        },
+        "8_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 8"
+        },
+        "LP Recycle_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of low-pressure recycle stream"
+        },
+        "LP Recycle_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of low-pressure recycle stream"
+        },
+        "LP Recycle_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of low-pressure recycle stream"
+        },
+        "LP Recycle_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in low-pressure recycle stream"
+        },
+        "LP Recycle_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in low-pressure recycle stream"
+        },
+        "LP Recycle_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in low-pressure recycle stream"
+        },
+        "LP Recycle_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in low-pressure recycle stream"
+        },
+        "LP Recycle_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in low-pressure recycle stream"
+        },
+        "LP Recycle_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in low-pressure recycle stream"
+        },
+        "MeAce_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of methyl acetate product stream"
+        },
+        "MeAce_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of methyl acetate product stream"
+        },
+        "MeAce_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of methyl acetate product stream. MeAce (stream MeAce) is a production output and one of the target objectives."
+        },
+        "MeAce_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in methyl acetate product stream"
+        },
+        "MeAce_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in methyl acetate product stream"
+        },
+        "MeAce_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in methyl acetate product stream"
+        },
+        "MeAce_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in methyl acetate product stream"
+        },
+        "MeAce_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in methyl acetate product stream"
+        },
+        "MeAce_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in methyl acetate product stream"
+        },
+        "11_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 11"
+        },
+        "11_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 11"
+        },
+        "11_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 11"
+        },
+        "11_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 11"
+        },
+        "11_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 11"
+        },
+        "11_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 11"
+        },
+        "11_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 11"
+        },
+        "11_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 11"
+        },
+        "11_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 11"
+        },
+        "Purge_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of purge stream"
+        },
+        "Purge_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of purge stream"
+        },
+        "Purge_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of purge stream"
+        },
+        "Purge_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in purge stream"
+        },
+        "Purge_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in purge stream"
+        },
+        "Purge_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in purge stream"
+        },
+        "Purge_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in purge stream"
+        },
+        "Purge_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in purge stream"
+        },
+        "Purge_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in purge stream"
+        },
+        "HP Recycle_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of high-pressure recycle stream"
+        },
+        "HP Recycle_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of high-pressure recycle stream"
+        },
+        "HP Recycle_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of high-pressure recycle stream"
+        },
+        "HP Recycle_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in high-pressure recycle stream"
+        },
+        "HP Recycle_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in high-pressure recycle stream"
+        },
+        "HP Recycle_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in high-pressure recycle stream"
+        },
+        "HP Recycle_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in high-pressure recycle stream"
+        },
+        "HP Recycle_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in high-pressure recycle stream"
+        },
+        "HP Recycle_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in high-pressure recycle stream"
+        },
+        "14_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 14"
+        },
+        "14_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 14"
+        },
+        "14_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 14"
+        },
+        "14_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 14"
+        },
+        "14_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 14"
+        },
+        "14_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 14"
+        },
+        "14_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 14"
+        },
+        "14_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 14"
+        },
+        "14_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 14"
+        },
+        "CO_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of CO feed stream"
+        },
+        "CO_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of CO feed stream"
+        },
+        "CO_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in CO feed stream"
+        },
+        "CO_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in CO feed stream"
+        },
+        "CO_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in CO feed stream"
+        },
+        "CO_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in CO feed stream"
+        },
+        "CO_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in CO feed stream"
+        },
+        "CO_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in CO feed stream"
+        },
+        "16_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 16"
+        },
+        "16_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 16"
+        },
+        "16_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 16"
+        },
+        "16_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 16"
+        },
+        "16_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 16"
+        },
+        "16_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 16"
+        },
+        "16_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 16"
+        },
+        "16_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 16"
+        },
+        "16_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 16"
+        },
+        "Recycle CO_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of CO recycle stream"
+        },
+        "Recycle CO_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of CO recycle stream"
+        },
+        "Recycle CO_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of CO recycle stream"
+        },
+        "Recycle CO_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in CO recycle stream"
+        },
+        "Recycle CO_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in CO recycle stream"
+        },
+        "Recycle CO_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in CO recycle stream"
+        },
+        "Recycle CO_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in CO recycle stream"
+        },
+        "Recycle CO_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in CO recycle stream"
+        },
+        "Recycle CO_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in CO recycle stream"
+        },
+        "Feed CO_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of CO fresh feed stream"
+        },
+        "Feed CO_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of CO fresh feed stream"
+        },
+        "Feed CO_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of CO fresh feed stream"
+        },
+        "Feed CO_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in CO fresh feed stream"
+        },
+        "Feed CO_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in CO fresh feed stream"
+        },
+        "Feed CO_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in CO fresh feed stream"
+        },
+        "Feed CO_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in CO fresh feed stream"
+        },
+        "Feed CO_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in CO fresh feed stream"
+        },
+        "Feed CO_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in CO fresh feed stream"
+        },
+        "42_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of stream 42"
+        },
+        "42_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of stream 42"
+        },
+        "42_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of stream 42"
+        },
+        "42_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in stream 42"
+        },
+        "42_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in stream 42"
+        },
+        "42_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in stream 42"
+        },
+        "42_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in stream 42"
+        },
+        "42_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in stream 42"
+        },
+        "42_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in stream 42"
+        },
+        "Carbonilation DME_Carbonylation DME_rateFormula": {
+            "type": "REAL",
+            "unit": "mol/(kg_cat·s)",
+            "description": "Reaction rate of DME carbonylation in reactor R-101 computed from the rate formula"
+        },
+        "total_energy_demand": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Total energy demand = sum of K-101 to K-104 energy consumption. This is the total compressor energy usage in the production process and one of the target objectives for energy cost.",
+            "note": "Equal to the sum of energy demand from the four compressors: K-101, K-102, K-103, and K-104."
+        },
+        "carbon_efficiency": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "c-yield is the carbon conversion efficiency. This is an important metric for evaluating process performance and one of the target objectives.",
+            "note": "Carbon conversion efficiency (c-yield) = 3 * MeAce_molarFlow / (80 + CO_molarFlow)"
+        },
+        "specific_energy_consumption_meAce": {
+            "type": "REAL",
+            "unit": "J/mol",
+            "description": "Energy consumption per mole of methyl acetate product. This is an important metric for evaluating process energy efficiency and one of the target objectives for unit energy cost.",
+            "note": "Specific energy consumption = total_energy_demand / MeAce_molarFlow"
+        },
+        "4_enthalpy": {
+            "type": "REAL",
+            "unit": "J/s",
+            "description": "Enthalpy flow of stream 4"
+        },
+        "4_enthalpyF": {
+            "type": "REAL",
+            "unit": "J/mol",
+            "description": "Molar enthalpy of stream 4"
+        },
+        "5_enthalpy": {
+            "type": "REAL",
+            "unit": "J/s",
+            "description": "Enthalpy flow of stream 5"
+        },
+        "5_enthalpyF": {
+            "type": "REAL",
+            "unit": "J/mol",
+            "description": "Molar enthalpy of stream 5"
+        },
+        "MeAce_massFlow": {
+            "type": "REAL",
+            "unit": "kg/s",
+            "description": "Mass flow rate of methyl acetate product stream. MeAce (stream MeAce) is a production output and one of the target objectives."
+        },
+        "Tpinch": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Pinch temperature in the heat exchanger network"
+        },
+        "QhMin": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Minimum hot utility requirement from heat integration analysis"
+        },
+        "QcMin": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Minimum cold utility requirement from heat integration analysis"
+        },
+        "QRecov": {
+            "type": "REAL",
+            "unit": "W",
+            "description": "Heat recovered through internal heat integration"
+        },
+        "electricity_price": {
+            "type": "REAL",
+            "unit": "EUR/kWh",
+            "description": "Electricity unit price used for cost calculation"
+        },
+        "steam_price": {
+            "type": "REAL",
+            "unit": "EUR/kWh",
+            "description": "Steam unit price used for cost calculation"
+        },
+        "cooling_price": {
+            "type": "REAL",
+            "unit": "EUR/kWh",
+            "description": "Cooling utility unit price used for cost calculation"
+        },
+        "total_cost": {
+            "type": "REAL",
+            "unit": "EUR/Kg",
+            "description": "Total operating cost including electricity, steam, and cooling costs. This is cost of specific energy consumption (C-SEC), one of the target objectives.",
+            "note": "Total cost (C-SEC) = (electricity_price) * (total_energy_demand) + (steam_price) * (Q_heat) + (cooling_price) * (Q_cool)"
+        },
+        "DME_pressure": {
+            "type": "REAL",
+            "unit": "Pa",
+            "description": "Pressure of DME feed stream"
+        },
+        "DME_temperature": {
+            "type": "REAL",
+            "unit": "K",
+            "description": "Temperature of DME feed stream"
+        },
+        "DME_massFlow": {
+            "type": "REAL",
+            "unit": "kg/s",
+            "description": "Mass flow rate of DME feed stream"
+        },
+        "DME_Methanol": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methanol in DME feed stream"
+        },
+        "DME_Water": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of water in DME feed stream"
+        },
+        "DME_Dimethyl ether": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of dimethyl ether (DME) in DME feed stream"
+        },
+        "DME_Carbon monoxide": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of carbon monoxide (CO) in DME feed stream"
+        },
+        "DME_Methyl acetate": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of methyl acetate in DME feed stream"
+        },
+        "DME_Hydrogen": {
+            "type": "REAL",
+            "unit": "dimensionless (0-1)",
+            "description": "Molar ratio of hydrogen in DME feed stream"
+        },
+        "DME_molarFlow": {
+            "type": "REAL",
+            "unit": "mol/s",
+            "description": "Total molar flow rate of DME feed stream"
+        },
+        "TEST_ID": {
+            "type": "STRING",
+            "description": "Identifier of a test group for a specific experimental purpose within a run (e.g., TS1, TS2, TS3, TS4, DOE, BO)"
+        },
+        "RUN_ID": {
+            "type": "STRING",
+            "description": "Identifier of an experiment batch (run). One RUN_ID can contain one or more TEST_ID groups"
+        }
+    }
+}

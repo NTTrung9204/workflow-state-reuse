@@ -1,0 +1,2 @@
+min_temp,max_temp,min_pressure,max_pressure,min_CO_flow,max_CO_flow,min_split_factor,max_split_factor,min_length,max_length,avg_c_yield,avg_c_sec
+450.667,486.0,2100000.0,3600000.0,20.0,70.0,0.05,0.35,4.2,8.8,0.5071663776,0.1296180099
